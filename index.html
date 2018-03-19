@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sheffield RSE</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Anna Krystalli" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/viz/viz.js"></script>
+    <link href="libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
+    <script src="libs/grViz-binding/grViz.js"></script>
+    <link rel="stylesheet" href="assets/css/little_ak.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/little_ak-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Sheffield RSE
+## ⚔<br/>with xaringan
+### Anna Krystalli
+### 2018/02/12
+
+---
+
+
+
+
+
+---
+background-image: 'assets/RSE_2017.png'
+
+# WHO: we are
+
+&lt;img src="assets/RSE_2017.png"&gt;
+---
+
+# WHERE: we came from
+---
+
+### UK RSE
+
+---
+
+### EPSRC Fellowships
+&lt;img src="assets/Fellowship.png"&gt;
+
+---
+
+## WHY: we do what we do
+
+---
+
+&gt; "Researchers want to climb epic mountains..."
+[Mike Croucher Keynote]()
+
+&lt;img src="http://cdn-uploads.gameblog.fr/images/jeux/0/UE4_05.jpg"&gt;
+
+---
+
+### awesome new adventure gear
+
+&lt;iframe src="https://giphy.com/embed/IO9oLRzXMcHV6" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/mountains-IO9oLRzXMcHV6"&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+
+---
+
+## ok, I'm talking about computers
+
+&lt;iframe src="https://giphy.com/embed/qh5xAmz81fzJS" width="480" height="384" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/animated-90s-internet-qh5xAmz81fzJS"&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+
+---
+
+### any fancy new gear can be frustrating
+
+&lt;img src="assets/debugging.gif"&gt;
+
+---
+
+### even dangerous!
+
+&lt;img src="assets/woes.png"&gt;
+
+---
+
+### who do you call?
+
+&gt; "Researchers want to climb epic mountains, we help them get there"
+[Mike Croucher Keynote]()
+
+&lt;img src="https://github.com/mikecroucher/RSE_2017_keynote_presentation/blob/gh-pages/mountain_guide.png?raw=true"&gt;
+
+
+---
+
+# WHAT: we do
+
+- High Performance computing
+- code optimisation
+- software development
+- Training
+- Community building
+
+---
+
+# WHERE: we live
+
+
+
+---
+
+![](index_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+
+---
+
+## WHO: we work with
+
+<div id="htmlwidget-1079d3a12c0d3f078d9d" style="width:504px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1079d3a12c0d3f078d9d">{"x":{"diagram":"\ndigraph {\n\n  # graph attributes\n  graph [overlap = true,\n        rankdir=LR,\n        layout = dot, \n        color = black,\n        size=\"7.75,7.25\"]\n\n  # edge attributes\n  edge [color = black,\n       arrowhead = inv,\n       arrowtail = inv,\n        dir = both]\n\n\n  # node attributes\n  node [shape = oval,\n        fontname = Helvetica,\n        fixedsize = false,\n        style = filled,\n        width = 0.9,\n        rank = same]\n\n  # node statements\n  node [color = darkorchid, fontcolor = white]\n  A [label = \"EU\"]\n  B [label = \"National\"]\n  node [color = cadetblue, fontcolor = white]\n  C [label = \"Institutional\"]\n  D [label = \"Faculty\"]\n  E [label = \"Departmental\"]\n node [color = aquamarine, fontcolor = black]\n  F [label = \"Group\"]\n  G [label = \"Individuals\"]\n\n\n # subgraph for innovation\n subgraph cluster1 {\n    label = \"external partnerships\";\n    color = black\n    A B\n  } \n\n  subgraph cluster2 {\n    label = \"institutional partnerships\";\n    C D E\n  } \n\n  subgraph cluster3 {\n  label = \"researcher partnerships\";\n    F G\n  } \n  # edge statements\n  A -> B -> C -> D -> E -> F -> G\n\n\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+---
+
+### EU
+#### OpenDreamKit
+
+
+
+<div id="htmlwidget-09f6c8cb89342199e861" style="width:504px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-09f6c8cb89342199e861">{"x":{"diagram":"\ndigraph {\n\n  # graph attributes\n  graph [overlap = true,\n        rankdir=LR,\n        layout = dot, \n        color = black]\n\n  # edge attributes\n  edge [color = black,\n       arrowhead = inv,\n       arrowtail = inv,\n        dir = both]\n\n\n  # node attributes\n  node [shape = oval,\n        fontname = Helvetica,\n        fixedsize = false,\n        style = filled,\n        width = 0.9,\n        rank = same,\n        color = grey34, fontcolor = white]\n\n  # node statements\n  C [label = \"Institutional\"]\n  D [label = \"Faculty\"]\n  E [label = \"Departmental\"]\n  F [label = \"Group\"]\n  G [label = \"Individuals\"]\n\n  node [color = darkorchid, fontcolor = white]\n  A [label = \"EU\"]\n  B [label = \"National\"]\n\n # subgraph for innovation\n subgraph cluster1 {\n    label = \"external partnerships\";\n    color = black\n    A B\n  } \n\n  # edge statements\n  A -> B -> C -> D -> E -> F -> G\n\n\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+---
+
+##### juyter on HPC
+
+---
+
+##### modules template
+- http://bitsandchips.me/Modules-template-docs/about/
+
+---
+
+## National
+---
+
+### Jade
+
+&lt;img src="assets/jade.png" ref="http://www.jade.ac.uk/"&gt;
+
+---
+
+### Insigneo
+
+&lt;img src="https://insigneo.org/wp-content/uploads/Insigneo-infographics-2016-17-website.jpg"&gt;
+
+---
+
+
+
+### institutional
+
+<div id="htmlwidget-63c161b8ec35a79fe6e9" style="width:504px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-63c161b8ec35a79fe6e9">{"x":{"diagram":"\ndigraph {\n\n  # graph attributes\n  graph [overlap = true,\n        rankdir=LR,\n        layout = dot, \n        color = black]\n\n  # edge attributes\n  edge [color = black,\n       arrowhead = inv,\n       arrowtail = inv,\n        dir = both]\n\n\n  # node attributes\n  node [shape = oval,\n        fontname = Helvetica,\n        fixedsize = false,\n        style = filled,\n        width = 0.9,\n        rank = same, color = grey34, fontcolor = white]\n\n  # node statements\n  A [label = \"EU\"]\n  B [label = \"National\"]\n  F [label = \"Group\"]\n  G [label = \"Individuals\"]\n\n  node [color = cadetblue, fontcolor = white]\n  C [label = \"Institutional\"]\n  D [label = \"Faculty\"]\n  E [label = \"Departmental\"]\n\n\n  subgraph cluster2 {\n    label = \"institutional partnerships\";\n    C D E\n  } \n\n  # edge statements\n  A -> B -> C -> D -> E -> F -> G\n\n\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+---
+
+### Institutional: dataviz.shef
+
+&lt;img src="assets/dataviz_shef.png"&gt;
+
+
+---
+
+## researcher level
+
+<div id="htmlwidget-15959b7152591e0cda36" style="width:504px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-15959b7152591e0cda36">{"x":{"diagram":"\ndigraph {\n\n  # graph attributes\n  graph [overlap = true,\n        rankdir=LR,\n        layout = dot, \n        color = black]\n\n  # edge attributes\n  edge [color = black,\n       arrowhead = inv,\n       arrowtail = inv,\n        dir = both]\n\n\n  # node attributes\n  node [shape = oval,\n        fontname = Helvetica,\n        fixedsize = false,\n        style = filled,\n        width = 0.9,\n        rank = same, color = grey34, fontcolor = white]\n\n  # node statements\n  A [label = \"EU\"]\n  B [label = \"National\"]\n  C [label = \"Institutional\"]\n  D [label = \"Faculty\"]\n  E [label = \"Departmental\"]\n\n node [color = aquamarine, fontcolor = black]\n  F [label = \"Group\"]\n  G [label = \"Individuals\"]\n\n  subgraph cluster3 {\n  label = \"researcher partnerships\";\n    F G\n  } \n  # edge statements\n  A -> B -> C -> D -> E -> F -> G\n\n\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+
+---
+
+### The long tail of research
+
+&lt;iframe src="https://widgets.figshare.com/articles/106458/embed?show_title=1" width="900" height="700" frameborder="0"&gt;&lt;/iframe&gt;
+
+---
+
+### OOOMINDS - Grant level support for 3
+
+&lt;img src="https://raw.githubusercontent.com/mikecroucher/research_computing/gh-pages/dagmar_grant.png"&gt;"
+
+
+
+---
+
+### Researchers
+
+
+---
+
+## Community &amp; Capacity building
+
+&lt;iframe src="https://giphy.com/embed/i04wdjzz8xfyM" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;p&gt;&lt;a href="https://giphy.com/gifs/network-i04wdjzz8xfyM"&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
