@@ -214,11 +214,11 @@ digraph {
   # node attributes
   node [shape = oval,
         fontname = Helvetica,
-        fixedsize = true,
+        fixedsize = false,
         style = filled,
-        width = 4,
-        height = 4,
-        fontsize = 56,
+        #width = 4,
+        #height = 2.5,
+        fontsize = 48,
         rank = same]
 
   # node statements
@@ -255,7 +255,7 @@ digraph {
 
 
 }
-", height = 300)
+", height = 100)
 ```
 
 ---
